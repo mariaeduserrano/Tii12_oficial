@@ -1,0 +1,68 @@
+/* css externo - para que funcione é necessário fazer o link no HTML. */
+
+h1{
+    background-color: rgba(236, 255, 192, 0.3);
+    padding: 5px;
+    font-family: cursive;
+    text-align: center;
+}
+
+p, li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+a{
+    background-color:beige;
+    color:black;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 15px;
+    border: solid darkcyan 2px;
+    margin: 30px;
+}
+
+/* Comportamento de link a ser clicado */
+a:link{
+    color:darkslategrey;
+}
+
+a:visited{
+    color:beige;
+    background-color:darkcyan;
+}
+
+/* Comportamenro de passar sobre */
+a:hover{
+    background-color:burlywood;
+    color:beige;
+}
+
+/* Comportamento do link quano está ativo */
+a:active{
+    background-color:khaki;
+    color:darkcyan;
+}
+
+/* Trabalhando com Pseudo-elemento */
+p::first-line{
+    color:darkslategrey;
+    font-variant: small-caps;
+}
+
+p::first-letter{
+    color:darkslategray;
+    font-size:large;
+}
+
+h3::before{
+    content:url(/Img/icone.png);
+}
+/* Este pseudo-elemento é específico  */
+::marker{
+    color:darkgoldenrod;
+}
+/* Este pseudo-elemento modifica o que o usuário esta selecionando */
+::selection{
+    color:dimgrey;
+    background-color: black;
+}
