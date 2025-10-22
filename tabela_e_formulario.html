@@ -5,6 +5,157 @@
         <title>Tabela e Formulário</title>
     </head>
     <body>
-        <h1></h1>
+        <h1>MERCADINHO DA DUDS</h1>
+        <hr>
+        <table border="1">
+        <tr>
+            <th>Produto</th>
+            <th>Categoria</th>
+            <th>Preço(R$)</th>
+            <th>Disponível</th>
+        </tr>
+        <tr>
+            <td>Arroz</td>
+            <td>Básico</td>
+            <td>10R$</td>
+            <td>Sim</td>
+        </tr>
+        <tr>
+            <td>Feijão</td>
+            <td>Básico</td>
+            <td>5R$</td>
+            <td>Sim</td>
+        </tr>
+        <tr>
+            <td>Macarrão</td>
+            <td>Básico</td>
+            <td>15R$</td>
+            <td>Sim</td>
+        </tr>
+        <tr>
+            <td>Detergente</td>
+            <td>Limpeza</td>
+            <td>20R$</td>
+            <td>Sim</td>
+        </tr>
+        <tr>
+            <td>Esponja</td>
+            <td>Limpeza</td>
+            <td>3R$</td>
+            <td>Sim</td>
+        </tr>
+        <tr>
+            <td>Sal</td>
+            <td>Temperos</td>
+            <td>5R$</td>
+            <td>Sim</td>
+        </tr>
+        <tr>
+            <td>Açúcar</td>
+            <td>Temperos</td>
+            <td>5R$</td>
+            <td>Sim</td>
+        </tr>
+        <tr>
+            <td>Pimenta</td>
+            <td>Temperos</td>
+            <td>5R$</td>
+            <td>Não</td>
+        </tr>
+        <tr>
+            <td>Vinagre</td>
+            <td>Temperos</td>
+            <td>5R$</td>
+            <td>Não</td>
+        </tr>
+        </table>
+        <hr>
+        <form action="" method="post" name="">
+            <p>Selecione os produtos que você deseja e a quantidade:</p>
+            <p>
+            <input type="checkbox" id="arroz" name="produto">
+            <label for="arroz">Arroz</label>
+            <p>
+                <input type="number" id="quantidade" name="quantidade">
+            </p>
+        </p>
+        <p>
+            <input type="checkbox" id="feijao" name="produto">
+            <label for="feijao">Feijão</label>
+            <p>
+                <input type="number" id="quantidade" name="quantidade">
+            </p>
+        </p>
+        <p>
+            <input type="checkbox" id="macarrao" name="produto">
+            <label for="macarrao">Macarrão</label>
+            <p>
+                <input type="number" id="quantidade" name="quantidade">
+            </p>
+        </p>
+        <p>
+            <input type="checkbox" id="detergente" name="produto">
+            <label for="detergente">Detergente</label>
+            <p>
+                <input type="number" id="quantidade" name="quantidade">
+            </p>
+        </p>
+        <p>
+            <input type="checkbox" id="esponja" name="produto">
+            <label for="esponja">Esponja</label>
+            <p>
+                <input type="number" id="quantidade" name="quantidade">
+            </p>
+        </p>
+        <p>
+            <input type="checkbox" id="sal" name="produto">
+            <label for="sal">Sal</label>
+            <p>
+                <input type="number" id="quantidade" name="quantidade">
+            </p>
+        </p>
+        <p>
+            <input type="checkbox" id="acucar" name="produto">
+            <label for="acucar">Açúcar</label>
+            <p>
+                <input type="number" id="quantidade" name="quantidade">
+            </p>
+        </p>
+        <p>
+            <input type="checkbox" id="pimenta" name="produto">
+            <label for="pimenta">Pimenta</label>
+            <p>
+                <input type="number" id="quantidade" name="quantidade">
+            </p>
+        </p>
+        <p>
+            <input type="checkbox" id="vinagre" name="produto">
+            <label for="vinagre">Vinagre</label>
+            <p>
+                <input type="number" id="quantidade" name="quantidade">
+            </p>
+        </p>
+        <hr>
+        <p>
+            <label for="pagamento">Forma de pagamento</label>
+            <select>
+                <option value="">Escolha uma opção</option>
+                <option value="debito">Débito</option>
+                <option value="credito">Crédito</option>
+                <option value="pix">Pix</option>
+            </select>
+        </p>
+        <hr>
+        <p>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" requierd>
+            </p>
+        <p>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" requierd>
+            </p>
+            <hr>
+            <button id="" onclick="">ENVIAR</button>
+        </form>
     </body>
 </html>
