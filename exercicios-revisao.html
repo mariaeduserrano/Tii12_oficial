@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+
+</head>
+<body>
+    
+</body>
+<script>
+
+
+//desafios
+
+// declare variaveis com os 5 tipos basicos de valor (numero, string
+// booleano, array(lista) e objecto) 
+let idade = 18;
+let nome = "Maria";
+let querPintar = true; 
+let materiaisNecessarios =["Pincel", "Tinta", "Pote com água", "Pano", "Tela"];
+let infoGeral = {nome:"Maria", idade:"18", hobbie:"Pintar e desenhar"}
+
+//explique em suas palavras o que faz o console.log() (usando comentarios)
+
+//O console.log() é o comando que mostra a informação desejada na aba console quando inspecionar os elementos do site
+//
+//
+//
+
+//selecione o segundo item do array abaixo, e o valor sendo
+//descrito pela chave nome no objeto abaixo, então imprima cada um
+//no console.log
+
+let arrayExemplo = [5,10,15]
+
+let objetoExemplo = {nome:"carlos",idade:15}
+console.log(arrayExemplo[1])
+console.log(objetoExemplo.nome)
+console.log(objetoExemplo.idade)
+
+//crie uma função que mostre a frase "Isso é uma função" no console
+//e chame ela uma vez
+function issoAqui(){
+    console.log("Isso é uma função")
+}
+issoAqui()
+
+//crie uma função chamada 'moradorCasa' que recebe o parametro morador
+//e chame ela com um exemplo de nome de morador
+let morador = "Marcio"
+let numeroCasa = 77
+function moradorCasa(morador, numero){
+    console.log("Nome do morador: " + morador +  ", " + "Número da casa: " + numero)
+}
+moradorCasa(morador, numeroCasa)
+
+//crie uma função chamada 'comidaFavorita', com 2 parametros,
+//chamados "nomeAluno" e "comidaFavorita", então chame essa função 3 vezes
+//usando um nome e uma comida favorita diferente para cada chamada da
+//função
+let alunos = ["Maria", "Yoongi", "Jungkook"]
+let comidas = ["Tangerina", "Leite de banana", "Chocolate"]
+console.log("Aluno:" + alunos[0] + ", " + "Comida favorita:" + comidas[2])
+console.log("Aluno:" + alunos[1] + ", " + "Comida favorita:" + comidas[0])
+console.log("Aluno:" + alunos[2] + ", " + "Comida favorita:" + comidas[1])
+
+//Crie uma funcao que receba 2 numeros como parametros,
+//e então some um numero com o outro.
+let valor1 = 5;
+let valor2 = 20;
+function somarNumeros(number1,number2){
+  return number1+number2
+
+}
+
+console.log(somarNumeros(valor1, valor2))
+
+
+</script>
+</html>
