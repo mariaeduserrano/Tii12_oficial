@@ -136,7 +136,14 @@
 
 // Escreva o código do Desafio 1 aqui:
 
+let tituloPrincipal = document.querySelector('#titulo-principal')
+tituloPrincipal.textContent = "Intranet Corp"
+console.log(tituloPrincipal.textContent)
 
+let paragrafo = document.querySelector('#ultimo-comunicado')
+paragrafo.textContent = "Manutenção agendada para sexta-feira às 18h."
+paragrafo.style.color = "red"
+console.log(paragrafo.textContent)
 
 // --- Desafio 2: Manipulação de Atributos e Classes ---
 // 1. Selecione o funcionário "Bruno Costa (Marketing)".
@@ -147,7 +154,12 @@
 //    usando .setAttribute().
 
 // Escreva o código do Desafio 2 aqui:
+let brunoCosta = document.querySelectorAll('.funcionario')[1]
+brunoCosta.classList.add("funcionario-destaque")
 
+let link = document.querySelector('#link-comunicados')
+link.setAttribute('href', '#')
+link.setAttribute('target', '_blank')
 
 
 // --- Desafio 3: Eventos (addEventListener) ---
@@ -156,7 +168,10 @@
 // 3. Dentro do evento, mostre um 'alert()' com a mensagem "Painel clicado!".
 
 // Escreva o código do Desafio 3 aqui:
-
+let tituloPrin = document.querySelector('#titulo-principal')
+tituloPrin.addEventListener("click", (e) => {
+    alert("Painel clicado")
+})
 
 
 // --- Desafio 4: Criação de Elementos (createElement e appendChild) ---
@@ -170,8 +185,14 @@
 // 6. Adicione (appendChild) o novo <li> à lista.
 
 // Escreva o código do Desafio 4 aqui:
+let algumaCoisa = document.querySelector("#lista-funcionarios")
 
+let elementoLi = document.createElement("p")
+elementoLi.textContent = "Daniel Moreira (Vendas)"
+elementoLi.classList.add("funcionario")
+elementoLi.setAttribute('data-id', '104')
 
+algumaCoisa.appendChild(elementoLi)
 
 // --- Desafio 5: Juntando Tudo (Formulário, Eventos, Criação) ---
 // Este é o desafio principal! Faça o formulário do RH funcionar.
