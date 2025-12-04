@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Minhas Turmas</title>
+    </head>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        header,footer {
+            background-color: blue;
+            height: 70px;
+        }
+        .cabecalho {
+            display: flex;
+            padding: 0px;
+        }
+        #botao-voltar {
+            height: 100px;
+            width: auto;
+            background-color: white;
+            border: none;
+        }
+        #voltar {
+            height: 100px;
+            width: auto;
+        }
+        #texto {
+            font-size: 30px;
+            gap: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .principal {
+            display: flex;
+            padding: 10px;
+        }
+        .content {
+           
+        }
+        .tabela {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+            background-color: white;
+            border: 1px solid;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .tabela tr:last-child{
+            border-bottom: none;
+        }
+        .tabela th, .tabela td {
+            padding: 12px 8px;
+            border-right: 1px solid;
+
+        }
+        #cadastrar {
+            height: 90px;
+            width: auto;
+            border: none;
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+            border-radius: 20px;
+        }
+        #pranchetinha {
+            position: relative;
+            height: 800px;
+            width: auto;
+            top: 70px;
+            left: 400px;
+        }
+    </style>
+
+    <body>
+         <header></header>
+             
+        <div class="cabecalho">
+            <a href="primeira-pagina.html"><button id="botao-voltar"><img src="img/web-button-icon-back-button-free-png.webp" alt="voltar" id="voltar"></button></a>
+            <p id="texto">Suas Turmas</p>
+        </div>
+
+         <div class="principal">
+
+            <div class="content">
+               <div class="tabela">
+                <table>
+                <tr>
+                    <th>Aluno</th>
+                    <th>Ano</th>
+                    <th>Acertos</th>
+                    <th>Ofensivos</th>
+                    
+                </tr>
+                <tr>
+                   <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+              </table>
+             </div>
+            
+            </div>
+            <img src="img/ADDA PRANCHETA1.png" alt="pranchetinha" id="pranchetinha">
+         </div>
+    </body>
+         <footer></footer>
+</html>

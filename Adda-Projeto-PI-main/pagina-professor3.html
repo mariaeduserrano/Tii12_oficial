@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Pagina professor 2</title>
+    </head>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        header,footer {
+            height: 70px;
+            background-color: blue;
+        }
+        .voltar {
+            display: flex;
+        }
+        #botao-voltar {
+            height: 100px;
+            width: auto;
+            background-color: white;
+            border: none;
+        }
+        #voltar {
+            height: 100px;
+            width: auto;
+        }
+        #pranchetinha{
+            position: relative;
+            height: 750px;
+            width: auto;
+            top: 60px;
+        }
+        .principal {
+            display: flex;
+        }
+        .content {
+            display: flex;
+        }
+        .tabela {
+            position: relative;
+            background-color: rgb(219, 219, 219);
+            border: 5px solid;
+            border-radius: 30px;
+            border-color: blue;
+            display: flex;
+            flex-direction: column;
+            height: 250px;
+            width: 570px;
+            left: 200px;
+            gap: 40px;
+            padding: 20px;
+            top: 150px;
+        }
+        .botoes {
+            height: 50px;
+            width: auto;
+            border: 3px solid;
+            border-color: blue;
+            border-radius: 20px;
+            font-size: 20px;
+        }
+        .botao-cad {
+            height: 50px;
+            width: auto;
+            border: none;
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+            border-radius: 20px;
+        }
+    </style>
+
+    <body>
+        <header></header>
+
+        <div class="voltar">
+            <a href="primeira-pagina.html"><button id="botao-voltar"><img src="img/web-button-icon-back-button-free-png.webp" alt="" id="voltar"></button></a>
+        </div>
+
+        <div class="principal">
+
+            <div class="content">
+                <img src="img/ADDA PRANCHETA1.png" alt="pranchetinha" id="pranchetinha">
+                <div class="tabela">
+                    <button class="botoes">CPF</button>
+                    <button class="botoes">Senha</button>
+                    <button class="botao-cad">Entrar</button>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+        <footer></footer>
+</html>

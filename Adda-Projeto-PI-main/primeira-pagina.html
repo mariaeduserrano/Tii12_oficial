@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira página</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header, footer {
+            background-color: rgb(13, 43, 139);
+            height: 70px;
+        }
+
+        #clique {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            font-size: 20px;
+            color: white;
+        }
+
+        .principal {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .balao-e-lampada {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 50px;
+
+        }
+
+        .texto-balao {
+            position: absolute;
+            top: 230px;
+            left: 500px;
+        }
+
+        #balao {
+            width: 500px;
+            position: absolute;
+            top: 30px;
+            left: 370px;
+        }
+
+        #pranchetinha {
+            position: relative;
+            width: 740px;
+            height: auto;
+            left: 600px;
+        }
+        .pran-a-p{
+            display: flex;
+            gap: 300px;
+        }
+        .aluno,.professor {
+            position: relative;
+            background-color: rgb(13, 43, 139);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 15px 50px;
+            font-size: 30px;
+            left: 620px;
+            top: -20px;
+        }
+        .aluno {
+            position: relative;
+            gap: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p id="clique">Clique <a href="pagina-download.html"> aqui </a> para instalar nosso app</p>
+    </header>
+
+    <div class=“principal”>
+
+        <div class=“balao-e-lampada”>
+
+            <img src="img/speech-bubble-talk-bubble-chat-bubble-icon-transparent-free-png.webp" alt=“balao” id="balao">
+
+            <p class="texto-balao">Seja bem-vindo ao projeto ADDA!<br>Você é aluno ou professor?</p>
+
+            <img src="img/ADDA PRANCHETA1.png" alt=“pranchetinha” id="pranchetinha">
+
+        </div>
+        <div class="pran-a-p">
+            <a href="pagina-aluno1.html"><button class="aluno">Aluno</button></a>
+            <a href="pagina-professor1.html"><button class="professor">Professor</button></a>
+        </div>
+
+    </div>
+    <footer></footer>
+</body>

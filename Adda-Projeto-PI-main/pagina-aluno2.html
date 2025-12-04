@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Pagina aluno 2</title>
+    </head>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        header,footer {
+            background-color: blue;
+            height: 70px;
+        }
+        .cabecalho {
+            display: flex;
+            padding: 0px;
+        }
+        #botao-voltar {
+            height: 100px;
+            width: auto;
+            background-color: white;
+            border: none;
+        }
+        #voltar {
+            height: 100px;
+            width: auto;
+        }
+        #texto {
+            font-size: 30px;
+            gap: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .principal {
+            display: flex;
+            padding: 10px;
+        }
+        .content {
+            position: relative;
+            background-color: rgb(219, 219, 219);
+            border: 5px solid;
+            border-radius: 30px;
+            border-color: blue;
+            display: flex;
+            flex-direction: column;
+            height: 550px;
+            width: 550px;
+            gap: 40px;
+            padding: 20px;
+            left: 100px;
+            top: 80px;
+            font-size: 20px;
+        }
+        #botoes {
+            height: 80px;
+            width: auto;
+            border: 3px solid;
+            border-color: blue;
+            border-radius: 20px;
+            font-size: 20px;
+        }
+        #cadastrar {
+            height: 90px;
+            width: auto;
+            border: none;
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+            border-radius: 20px;
+        }
+        #pranchetinha {
+            position: relative;
+            height: 800px;
+            width: auto;
+            top: 70px;
+        }
+    </style>
+
+    <body>
+         <header></header>
+             
+        <div class="cabecalho">
+            <a href="primeira-pagina.html"><button id="botao-voltar"><img src="img/web-button-icon-back-button-free-png.webp" alt="voltar" id="voltar"></button></a>
+            <p id="texto">Cadastro Alunos</p>
+        </div>
+
+         <div class="principal">
+
+            <div class="content">
+                <button id="botoes">Nome completo do aluno</button>
+                <button id="botoes">Série escolar</button>
+                <button id="botoes">RA</button>
+                <button id="botoes">Data de nascimento</button>
+                <button id="botoes">Senha</button>
+                <button id="botoes">Confirmar senha</button>
+                <a href="pagina-aluno3.html"><button id="cadastrar">Cadastrar</button></a>
+                
+            </div>
+            <img src="img/ADDA PRANCHETA1.png" alt="pranchetinha" id="pranchetinha">
+         </div>
+    </body>
+         <footer></footer>
+</html>

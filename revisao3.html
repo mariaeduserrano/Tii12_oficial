@@ -260,9 +260,9 @@ for(let i = 0; i <= 5; i++){
 
 // Resposta 11:
 let caixaProcessadas = 0
-for(let i = 0; i < 10; i++){
+for(let i = 0; i <= 10; i++){
     caixaProcessadas= caixaProcessadas + i
-    if(i == 9){
+    if(i == 10){
         console.log("Caixas processadas: " + caixaProcessadas)
     }
    
@@ -287,7 +287,10 @@ for(let i = 0; i < 10; i++){
 // -> console.log(clientes[i]);
 
 // Resposta 12:
-
+let clientes = ["João", "Maria", "Pedro", "Ana", "Lucas"]
+for (let i = 0; i < clientes.length; i++){
+    console.log(clientes[i])
+}
 
 
 // EXERCÍCIO 13: Personalizando a mensagem
@@ -295,7 +298,9 @@ for(let i = 0; i < 10; i++){
 // Dica: "Olá, " + clientes[i] + ", bem-vindo!"
 
 // Resposta 13:
-
+for (let i = 0; i < clientes.length; i++){
+    console.log("Olá " + clientes[i] + ", bem-vindo!")
+}
 
 
 // EXERCÍCIO 14: Procurando a Ana (Busca)
@@ -305,7 +310,11 @@ for(let i = 0; i < 10; i++){
 // -> if (clientes[i] === "Ana") { console.log("Achei a Ana na posição " + i); }
 
 // Resposta 14:
-
+for (let i = 0; i < clientes.length; i++){
+    if(clientes[i] === "Ana"){
+        console.log("Achei a ana na posição " + i)
+    }
+}
 
 
 // EXERCÍCIO 15: O Gerente de Vendas (Desafio Final)
@@ -318,7 +327,13 @@ for(let i = 0; i < 10; i++){
 // 5. No final: imprima o total.
 
 // Resposta 15:
+let vendas = [10, 20, 50, 5]
+let total2 = 10
 
+for (let i = 0; i < vendas.length; i++){
+    total2 = total2 + vendas[i]
+    console.log("Total de vendas: " + total2)
+}
 
 
 </script>
