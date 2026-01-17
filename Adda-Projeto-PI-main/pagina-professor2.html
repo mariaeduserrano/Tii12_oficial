@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pagina professor 1</title>
     </head>
 
     <style>
+        
         body {
             margin: 0;
-            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
             background-color: rgb(237, 231, 217);
         }
-        header,footer {
-            height: 70px;
-            background-color: rgb(13, 43, 139);
+        header, footer {
+            background-color: rgb(0, 5, 53);
+            height: 50px;
+            width: 100%;
+        }
+        header{
+            position: sticky;
+            z-index: 10;
+            top: 0px;
+        }
+        footer{
+            position: sticky;
+            bottom: 0px;
+
         }
         .voltar {
             display: flex;
@@ -30,39 +43,45 @@
         }
         #pranchetinha{
             position: relative;
-            height: 750px;
+            height: 400px;
             width: auto;
             top: 60px;
+            right: 310px;
+            left: 0px;
         }
-        .titulo-cadastro{
-          
-        }
+    
         .principal {
             display: flex;
         }
         .content {
             display: flex;
+            left: 350px;
+            position: sticky;
+    
         }
         .tabela {
             position: relative;
             background-color: rgb(219, 219, 219);
             border: 5px solid;
             border-radius: 30px;
-            border-color: rgb(13, 43, 139);
+            border-color: rgb(0, 5, 53);
             display: flex;
             flex-direction: column;
-            height: 500px;
-            width: 570px;
-            left: 200px;
+            height: 350px;
+            width: 400px;
+            left: 0px;
+            right: 200px;
             gap: 33px;
             padding: 10px;
-            top: 50px;
+            top: 10px;
+
+         
         }
         .botoes {
             height: 50px;
-            width: 500px;
+            width: 400px;
             border: 3px solid;
-            border-color: rgb(13, 43, 139);
+            border-color: rgb(0, 5, 53);
             border-radius: 20px;
             font-size: 20px;
             margin: auto;
@@ -71,11 +90,17 @@
             height: 50px;
             width: auto;
             border: none;
-            background-color: rgb(13, 43, 139);
+            background-color: rgb(0, 5, 53);
             color: white;
             font-size: 20px;
             border-radius: 20px;
         }
+
+        .titulo-cadastro {
+        text-align: center;
+        line-height: 50px;
+        height: 80px;
+       }
     </style>
 
     <body>
@@ -84,19 +109,36 @@
         <div class="voltar">
             <a href="primeira-pagina.html"><button id="botao-voltar"><img src="img/web-button-icon-back-button-free-png.webp" alt="" id="voltar"></button></a>
         </div>
-            <h2 class="titulo-cadastro">Cadastrar</h2>
+        
         <div class="principal">
                 
             <div class="content">
                 <img src="img/ADDA PRANCHETA1.png" alt="pranchetinha" id="pranchetinha">
                 <div class="tabela">
-                    <button class="botoes">CPF</button>
-                    <button class="botoes">Escola</button>
-                    <button class="botoes">Graduação</button>
-                    <button class="botoes">Area de conhecimento</button>
-                    <button class="botoes">Senha</button>
-                    <button class="botoes">Confirmar senha</button>
-                    <a href="pagina-professor3.html"><button class="botao-cad">Cadastrar</button></a>
+
+                    <form id="CPF">
+                    <input id="CPF" type="text" placeholder="CPF">
+                    </form>
+
+                    <form id="Escola">
+                    <input id="Escola" type="Text" placeholder="Escola">
+                    </form>
+                    
+                    <form id="Graduaçao">
+                    <input id="Graduaçao" id="Text" placeholder="Graduação">
+                    </form>
+
+                    <form id="Conhecimento">
+                    <input id="Conhecimento" id="text" placeholder="Área de Conhecimento">
+                    </form>
+
+                    <form id="Senha">
+                    <input id="senha" id="text" placeholder="Senha">
+                    </form>
+
+                    <a href="pagina-professor1.html"><button type="submit">Cadastrar</button></a>
+                  
+                    
                 </div>
             </div>
 

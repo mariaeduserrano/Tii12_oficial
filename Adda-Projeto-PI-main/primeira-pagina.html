@@ -1,123 +1,130 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeira página</title>
-
-    <style>
+</head>
+<style>
         body {
             margin: 0;
-            padding: 0;
             font-family: Arial, Helvetica, sans-serif;
             background-color: rgb(237, 231, 217);
+            background: linear-gradient(to bottom,
+            #ede7d9 30%,
+            #493521 30%)
         }
 
         header, footer {
-            background-color: rgb(13, 43, 139);
-            height: 70px;
-            
+            background-color: rgb(0, 5, 53);
+            height: 50px;
+            width: 100%;
+        }
+        header{
+            position: sticky;
+            z-index: 10;
+            top: 0px;
         }
         footer{
-            background-color: rgb(13, 43, 139);
-            height: 70px;
             position: sticky;
-            z-index: 5;
             bottom: 0px;
+            z-index: 10;
         }
-        #clique {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            font-size: 20px;
-            color: white;
-        }
-
-        .principal {
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .balao-e-lampada {
+        #adda {
             position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 50px;
-
+            width: 100%;
+            top: 10px;
         }
-
-        .texto-balao {
+        #sol{
+            width: 150px;
             position: absolute;
-            top: 210px;
-            left: 500px;
-            text-align: center;
-            font-size: 20px;
+            right: 50px;
+            top: 50px;
         }
-
-        #balao {
-            width: 350px;
+        #flores{
+            width: 40%;
             position: absolute;
-            top: 110px;
-            left: 440px;
+            top: 350px;
+            z-index: 1;
         }
-
-        #pranchetinha {
-            position: relative;
-            width: 740px;
-            height: auto;
-            left: 600px;
+        #floresDois{
+            width: 40%;
+            position: absolute;
+            top: 350px;
+            right: 10px;
+            z-index: 1;
         }
-        .pran-a-p{
-            display: flex;
-            gap: 300px;
-        }
-        .aluno, .professor {
-            width: 250px;
-            position: relative;
-            background-color: rgb(13, 43, 139);
+        .professor {
+            width: 200px;
+            position: absolute;
+            background-color: rgb(0, 5, 53);
             color: white;
             border: none;
             border-radius: 10px;
-            padding: 15px 50px;
+            padding: 10px 20px;
             font-size: 30px;
-            left: 550px;
-            top: -20px;
+            right: 150px;
+            top: 400px;
         }
-
+        .aluno{
+            width: 200px;
+            position: absolute;
+            background-color: rgb(0, 5, 53);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 30px;
+            left: 150px;
+            top: 400px;
+        }
+        
+        h2{
+            color:rgb(0, 5, 53)
+        }
+        ul {
+            line-height: 1.8;
+        }
+        ul li::marker {
+            content:"💡 ";
+        }
+        .blocoUm, .blocoDois{
+            margin: 100px;
+        }
     </style>
-</head>
-
 <body>
     <header>
     </header>
 
-    <div class=“principal”>
-
-        <div class=“balao-e-lampada”>
-
-            <img src="img/balao.png" alt=“balao” id="balao">
-
-            <p class="texto-balao">Seja bem-vindo ao projeto <br>ADDA!<br>Você é aluno ou professor?</p>
-
-            <img src="img/ADDA PRANCHETA1.png" alt=“pranchetinha” id="pranchetinha">
-
+        <div>
+            <img src="gifs/florzinhas.gif" alt="florzinhas na grama lado esquerdo" id="flores">
+            <img src="gifs/florzinhas.gif" alt="florzinhas na grama do lado direito" id="floresDois">
+            <img src="img/addas.png" alt="Personagem adda junto com baloes de fala" id="adda">  
+            <img src="gifs/solzinho.gif" alt="Solzinho sorrindo animado" id="sol">
         </div>
-        <div class="pran-a-p">
+        <div class="pran">
             <a href="pagina-aluno1.html"><button class="aluno">Aluno</button></a>
             <a href="pagina-professor1.html"><button class="professor">Professor</button></a>
         </div>
-
-    </div>
-    <div>
-        <p>mudança</p>
-    </div>
+        <div class="blocoUm">
+            <img src="img/titulos.png" alt="quem nos somos" id="quemsomos">
+            <p>A ADDA é um projeto educacional criado com o propósito de transformar o processo de alfabetização de alunos do 6º ano, oferecendo uma proposta mais atrativa, envolvente e eficaz. O projeto surge da necessidade de apoiar estudantes que, por diferentes motivos, não consolidaram completamente as habilidades de leitura e escrita nos anos anteriores e que, muitas vezes, não se sentem motivados pelas plataformas tradicionais disponibilizadas pelo governo.</p>     <p>A ADDA acredita que aprender pode — e deve — ser algo prazeroso. Por isso, utiliza recursos interativos, jogos educativos e atividades dinâmicas que estimulam o interesse dos alunos e tornam o aprendizado mais significativo. Mais do que apresentar conteúdos, a plataforma busca resgatar a confiança desses estudantes, fortalecendo sua autonomia e ampliando suas oportunidades de desenvolvimento acadêmico e pessoal.</p>    <p>Nosso objetivo imediato é aumentar o número de alunos alfabetizados dentro da escola, garantindo que todos tenham acesso a uma educação de qualidade. A longo prazo, queremos expandir o projeto para outras instituições e também alcançar crianças menores que estejam iniciando a alfabetização, contribuindo para a formação de uma base educacional sólida desde cedo.</p>
+        </div>
+        <div class="blocoDois">
+            <img src="img/titulosdois.png" alt="nossas missoes e valores" id="valores">
+            <h2>MISSÂO</h2>
+            <p>Promover a alfabetização de alunos do 6º ano por meio de uma plataforma interativa, acessível e motivadora, que una aprendizado e diversão. Nossa missão é apoiar estudantes que apresentam dificuldades no processo de leitura e escrita, oferecendo recursos pedagógicos que realmente façam sentido para eles e contribuam para seu desenvolvimento educacional.</p>
+            <h2>VISÂO</h2>
+            <p>Tornar a ADDA uma referência em inovação educacional, ampliando seu alcance para outras escolas e faixas etárias, ajudando cada vez mais crianças e adolescentes a aprenderem de forma prazerosa, eficiente e significativa. Buscamos transformar realidades, reduzir índices de defasagem escolar e fortalecer a educação como ferramenta de mudança social.</p>
+            <h2>VALORES</h2>
+            <ul>
+                <li>Educação com propósito: aprender não apenas para gerar números, mas para desenvolver habilidades reais.</li>
+                <li>Engajamento e motivação: transformar o aprendizado em uma experiência prazerosa e envolvente.</li>
+                <li>Inclusão e oportunidade: oferecer suporte a alunos que ficaram para trás no processo de alfabetização.</li>
+                <li>Inovação pedagógica: unir tecnologia, jogos e estudo de forma inteligente e educativa.</li>
+                <li>Responsabilidade social: contribuir para uma educação mais justa e acessível.</li>
+                <li>Respeito ao estudante: valorizar seus interesses, dificuldades e trajetórias, entendendo que cada um aprende em seu próprio ritmo.</li>
+            </ul>
+        </div>
     <footer></footer>
 </body>

@@ -10,9 +10,21 @@
             margin: 0;
             padding: 0;
         }
-        header,footer {
-            background-color: blue;
-            height: 70px;
+       
+
+         header, footer {
+            background-color: rgb(0, 5, 53);
+            height: 50px;
+            width: 100%;
+        }
+        header{
+            position: sticky;
+            z-index: 10;
+            top: 0px;
+        }
+        footer{
+            position: sticky;
+            bottom: 0px;
         }
         .cabecalho {
             display: flex;
@@ -37,17 +49,16 @@
             display: flex;
             padding: 10px;
         }
-        .content {
-           
-        }
+        
         .tabela {
-            width: 100%;
+            width: 300px;
             border-collapse: collapse;
             text-align: center;
             background-color: white;
             border: 1px solid;
             border-radius: 10px;
             overflow: hidden;
+            left: 200px;
         }
         .tabela tr:last-child{
             border-bottom: none;
@@ -55,22 +66,23 @@
         .tabela th, .tabela td {
             padding: 12px 8px;
             border-right: 1px solid;
+          
 
         }
         #cadastrar {
             height: 90px;
             width: auto;
             border: none;
-            background-color: blue;
+            background-color: rgb(0, 5, 53);
             color: white;
             font-size: 20px;
             border-radius: 20px;
         }
         #pranchetinha {
             position: relative;
-            height: 800px;
+            height: 500px;
             width: auto;
-            top: 70px;
+            top:0px;
             left: 400px;
         }
     </style>
@@ -79,7 +91,7 @@
          <header></header>
              
         <div class="cabecalho">
-            <a href="primeira-pagina.html"><button id="botao-voltar"><img src="img/web-button-icon-back-button-free-png.webp" alt="voltar" id="voltar"></button></a>
+            <a href="pagina-aluno1.html"><button id="botao-voltar"><img src="img/web-button-icon-back-button-free-png.webp" alt="voltar" id="voltar"></button></a>
             <p id="texto">Suas Turmas</p>
         </div>
 
@@ -92,7 +104,7 @@
                     <th>Aluno</th>
                     <th>Ano</th>
                     <th>Acertos</th>
-                    <th>Ofensivos</th>
+                    <th>Ofensiva</th>
                     
                 </tr>
                 <tr>

@@ -1,49 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-       <meta charset="utf-8">
-       <title>Cadastro Login</title>
-   </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Login</title>
 
-   <style>
-        body{
-            margin: 0;
-            padding: 0;
+</head>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(237, 231, 217);
+    }
+    
+ header, footer {
+            background-color: rgb(0, 5, 53);
+            height: 50px;
+            width: 100%;
         }
-        header,footer{
-            background-color: rgb(13, 43, 139);
-            height: 70px;
+        header{
+            position: sticky;
+            z-index: 10;
+            top: 0px;
         }
-        .principal{
-            display: flex;
-            flex-grow: 1;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+        footer{
+            position: sticky;
+            bottom: 0px;
         }
-        .content{
-         
-        }
-        #cadastro,#login{
-            position: relative;
-            background-color: rgb(13, 43, 139);
-            color: white;
-            height: 100px;
-            width: 300px;
-            font-size: 30px;
-            top: -500px;
-            border: none;
-            border-radius: 10px;
-        }
+
+    #cadastro, #login{
+        width: 200px;
+        position: relative;
+        background-color: rgb(0, 5, 53);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-size:30px;
+        left: 20px;
+        top: 10px;
+    }
        #pranchetinha{
         position: relative;
-        height: 800px;
-        width: auto;
+        width: 500px;
+        left: 250px;
         top: 100px;
+
        }
 
-         
-   </style>
+</style>
 
    <body>
         <header></header>
