@@ -11,8 +11,8 @@
             font-family: Arial, Helvetica, sans-serif;
             background-color: rgb(237, 231, 217);
             background: linear-gradient(to bottom,
-            #ede7d9 30%,
-            #493521 30%)
+            #ede7d9 20%,
+            #493521 20%)
         }
 
         header, footer {
@@ -44,41 +44,60 @@
         #flores{
             width: 40%;
             position: absolute;
-            top: 350px;
+            top: 400px;
             z-index: 1;
         }
         #floresDois{
             width: 40%;
             position: absolute;
-            top: 350px;
+            top: 400px;
             right: 10px;
             z-index: 1;
         }
-        .professor {
+        #nuvens{
+            width: 20%;
+            position: absolute;
+            top: 900px;
+            left: 205px;
+        }
+        #nuvensDois{
+            width: 15%;
+            position: absolute;
+            top: 880px;
+            right: 210px;
+        }
+        #professor {
             width: 200px;
             position: absolute;
-            background-color: rgb(0, 5, 53);
+            background-color: rgb(113, 59, 129);
             color: white;
             border: none;
-            border-radius: 10px;
+            border-radius: 50px;
             padding: 10px 20px;
             font-size: 30px;
             right: 150px;
             top: 400px;
         }
-        .aluno{
+        #aluno{
             width: 200px;
             position: absolute;
-            background-color: rgb(0, 5, 53);
+            background-color: rgb(116, 176, 231);
             color: white;
-            border: none;
-            border-radius: 10px;
+            border: none; 
+            border-radius: 50px;
             padding: 10px 20px;
             font-size: 30px;
             left: 150px;
             top: 400px;
         }
-        
+        #titulo{
+            background-color: rgb(116, 176, 231);
+            padding: 50px;
+            text-align: center;
+            margin: 200px;
+            border: 5px solid white;
+            border-radius: 50px;
+        }
         h2{
             color:rgb(0, 5, 53)
         }
@@ -88,8 +107,17 @@
         ul li::marker {
             content:"💡 ";
         }
-        .blocoUm, .blocoDois{
+        .blocoUm{
             margin: 100px;
+            background-color: #ede7d9;
+            padding: 50px;
+            border-radius: 50px;
+            border: 5px solid rgb(0, 5, 53);
+        }
+        #quemsomos, #comoFunciona, #contato{
+            width: 80%;
+            display: block;
+            margin: 0 auto;
         }
     </style>
 <body>
@@ -103,28 +131,53 @@
             <img src="gifs/solzinho.gif" alt="Solzinho sorrindo animado" id="sol">
         </div>
         <div class="pran">
-            <a href="pagina-aluno1.html"><button class="aluno">Aluno</button></a>
-            <a href="pagina-professor1.html"><button class="professor">Professor</button></a>
+            <a href="pagina-aluno1.html"><button id="aluno">Aluno</button></a>
+            <a href="pagina-professor1.html"><button id="professor">Professor</button></a>
         </div>
+         <p id="titulo">Aprender pode (e deve) ser divertido.
+            O ADDA é um projeto educacional <br>que apoia a alfabetização de alunos do 6º ano por meio de jogos, <br>aulas interativas e acompanhamento pedagógico.</p>
+            <img src="gifs/nuvensDois.gif" alt="nuvens brancas esquerda" id="nuvens">
+            <img src="gifs/nuvensDois.gif" alt="nuvens brancas direita" id="nuvensDois">
         <div class="blocoUm">
-            <img src="img/titulos.png" alt="quem nos somos" id="quemsomos">
-            <p>A ADDA é um projeto educacional criado com o propósito de transformar o processo de alfabetização de alunos do 6º ano, oferecendo uma proposta mais atrativa, envolvente e eficaz. O projeto surge da necessidade de apoiar estudantes que, por diferentes motivos, não consolidaram completamente as habilidades de leitura e escrita nos anos anteriores e que, muitas vezes, não se sentem motivados pelas plataformas tradicionais disponibilizadas pelo governo.</p>     <p>A ADDA acredita que aprender pode — e deve — ser algo prazeroso. Por isso, utiliza recursos interativos, jogos educativos e atividades dinâmicas que estimulam o interesse dos alunos e tornam o aprendizado mais significativo. Mais do que apresentar conteúdos, a plataforma busca resgatar a confiança desses estudantes, fortalecendo sua autonomia e ampliando suas oportunidades de desenvolvimento acadêmico e pessoal.</p>    <p>Nosso objetivo imediato é aumentar o número de alunos alfabetizados dentro da escola, garantindo que todos tenham acesso a uma educação de qualidade. A longo prazo, queremos expandir o projeto para outras instituições e também alcançar crianças menores que estejam iniciando a alfabetização, contribuindo para a formação de uma base educacional sólida desde cedo.</p>
-        </div>
-        <div class="blocoDois">
-            <img src="img/titulosdois.png" alt="nossas missoes e valores" id="valores">
-            <h2>MISSÂO</h2>
-            <p>Promover a alfabetização de alunos do 6º ano por meio de uma plataforma interativa, acessível e motivadora, que una aprendizado e diversão. Nossa missão é apoiar estudantes que apresentam dificuldades no processo de leitura e escrita, oferecendo recursos pedagógicos que realmente façam sentido para eles e contribuam para seu desenvolvimento educacional.</p>
-            <h2>VISÂO</h2>
-            <p>Tornar a ADDA uma referência em inovação educacional, ampliando seu alcance para outras escolas e faixas etárias, ajudando cada vez mais crianças e adolescentes a aprenderem de forma prazerosa, eficiente e significativa. Buscamos transformar realidades, reduzir índices de defasagem escolar e fortalecer a educação como ferramenta de mudança social.</p>
-            <h2>VALORES</h2>
+            <img src="img/titulo.png" alt="quem nos somos" id="quemsomos">
+            <p>O ADDA nasceu para apoiar alunos que, especialmente após a pandemia, enfrentam dificuldades na leitura e na escrita. Unimos educação, tecnologia e diversão para tornar o aprendizado mais acessível, interessante e eficaz.</p>
             <ul>
-                <li>Educação com propósito: aprender não apenas para gerar números, mas para desenvolver habilidades reais.</li>
-                <li>Engajamento e motivação: transformar o aprendizado em uma experiência prazerosa e envolvente.</li>
-                <li>Inclusão e oportunidade: oferecer suporte a alunos que ficaram para trás no processo de alfabetização.</li>
-                <li>Inovação pedagógica: unir tecnologia, jogos e estudo de forma inteligente e educativa.</li>
-                <li>Responsabilidade social: contribuir para uma educação mais justa e acessível.</li>
-                <li>Respeito ao estudante: valorizar seus interesses, dificuldades e trajetórias, entendendo que cada um aprende em seu próprio ritmo.</li>
+                <li>Aprendizagem baseada em jogos</li>
+                <li>Linguagem simples e acessível</li>
+                <li>Estímulo à autonomia do aluno</li>
+                <li>Educação com empatia e diversidade</li>
             </ul>
+            <h2>Valores do projeto</h2>
+            <ul>
+                <li>Amor pela educação</li>
+                <li>Empatia e inclusão</li>
+                <li>Respeito à diversidade</li>
+                <li>Compromisso com o aprendizado</li>
+            </ul>
+            <hr>
+            <img src="img/tituloDois.png" alt="titulo de como funciona" id="comoFunciona">
+            <p>O projeto é dividido em duas plataformas pensadas para públicos diferentes:</p>
+            <h2>App do Aluno</h2>
+            <p>Um ambiente lúdico e interativo para aprender brincando.</p>
+            <ul>
+                <li>Videoaulas curtas e didáticas</li>
+                <li>Exercícios práticos e jogos educativos</li>
+                <li>Sistema de moedas para personalização do personagem</li>
+                <li>Contador de dias seguidos de estudo (estímulo à constância)</li>
+            </ul>
+            <h2>Site do Professor</h2>
+            <p>Um espaço exclusivo para acompanhamento pedagógico.</p>
+            <ul>
+                <li>Visualização do progresso dos alunos</li>
+                <li>Acompanhamento do desempenho em atividades</li>
+                <li>Acesso organizado e intuitivo</li>
+            </ul>
+            <hr>
+            <img src="img/tituloQuatro.png" alt="titulo sobre as formas de contato" id="contato">
+            <p>Acompanhe o ADDA e fique por dentro das novidades.</p>
+            <p>📲 Instagram: @addaeducacaodivertida</p>
+            <p>📧 Atendimento online via redes sociais</p>
+            <p>Formulário para contato:</p>
         </div>
     <footer></footer>
 </body>

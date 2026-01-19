@@ -10,13 +10,21 @@
             margin: 0;
             padding: 0;
         }
-        header,footer{
-            background-color: rgb(0, 0, 256);
-            height: 70px;
+       
+         header, footer {
+            background-color: rgb(0, 5, 53);
+            height: 50px;
+            width: 100%;
         }
-        header {
-            align-items: center;
-            justify-content: center;
+        header{
+            position: sticky;
+            z-index: 10;
+            top: 0px;
+        }
+        footer{
+            position: fixed;
+            bottom: 0px;
+
         }
         #clique {
             
@@ -47,21 +55,11 @@
             justify-content: center;
         }
         
-        #cadastro,#login{
-            position: relative;
-            background-color: rgb(0, 5, 53);
-            color: white;
-            height: 90px;
-            width: 300px;
-            font-size: 30px;
-            top: -600px;
-            border: none;
-            border-radius: 10px;
-        }
+        
+    
        #pranchetinha{
         position: relative;
-        height: 800px;
-        width: auto;
+        width: 500px;
         top: 65px;
        }
 
@@ -78,7 +76,7 @@
         <div class="principal">
             <div class="content">
                 <button id="cadastro"><img src="img/appstore.jpg" alt="appstore"></button>
-                <img src="img/ADDA PRANCHETA1.png" alt="pranchetinha" id="pranchetinha">
+                <img src="img/AddaPNG.png" alt="pranchetinha" id="pranchetinha">
                 <button id="login"><img src="img/googleplay.png" alt="googleplay"></button>
             </div>
         </div>

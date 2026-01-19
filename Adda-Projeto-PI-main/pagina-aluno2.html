@@ -11,9 +11,20 @@
             padding: 0;
             background-color: rgb(237, 231, 217);
         }
-        header,footer {
+         header, footer {
             background-color: rgb(0, 5, 53);
-            height: 70px;
+            height: 50px;
+            width: 100%;
+        }
+        header{
+            position: sticky;
+            z-index: 10;
+            top: 0px;
+        }
+        footer{
+            position: fixed;
+            bottom: 0px;
+
         }
         .cabecalho {
             display: flex;
@@ -38,7 +49,7 @@
             display: flex;
             padding: 10px;
         }
-        .content {
+        .tabela {
             position: relative;
             background-color: white;
             border: 5px solid;
@@ -46,13 +57,13 @@
             border-color: rgb(0, 5, 53);
             display: flex;
             flex-direction: column;
-            height: 400px;
-            width: 550px;
+            height: 300px;
+            width: 400px;
             gap: 40px;
             padding: 20px;
-            left: 100px;
-            top: 20px;
-            font-size: 20px;
+            left: 240px;
+            top: 10px;
+            
         }
         #botoes {
             height: 80px;
@@ -72,51 +83,73 @@
             border-radius: 20px;
         }
         #pranchetinha {
-            position: relative;
-            height: 500px;
-            width: auto;
+            position:absolute;
+            width: 500px;
             top: 20px;
-            left: 30px;
+            left: 750px;
+           top: 130px;
         }
+
+        #Cadastrando{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 300px; 
+        margin: 15px;
+        padding: 5px;
+        border: none;
+        }
+
+        #cadastrando input{
+            font-size: 20px;
+        }
+
+        #Cadastrando input:focus{
+        background-color: rgb(209, 209, 209);
+       }
+
+       #cadastrar{
+        background-color: rgba(255, 243, 110, 0.993);
+        width: 200px;
+        right:90px;
+        height: 50px;
+        margin-top: 270px;
+        color: black;
+        border-color: rgb(184, 0, 0);
+        border-bottom: 10px;
+        position: relative;
+        
+       }
+
+
     </style>
 
     <body>
          <header></header>
              
         <div class="cabecalho">
-            <a href="primeira-pagina.html"><button id="botao-voltar"><img src="img/web-button-icon-back-button-free-png.webp" alt="voltar" id="voltar"></button></a>
+            <a href="pagina-aluno1.html"><button id="botao-voltar"><img src="img/web-button-icon-back-button-free-png.webp" alt="voltar" id="voltar"></button></a>
             <p id="texto">Cadastro Alunos</p>
         </div>
 
          <div class="principal">
 
-            <div class="content">
+            <div class="tabela">
 
-              <form id="Aluno">
-              <input id="Aluno" type="text" placeholder="Nome completo do aluno">
-              </form>
-
-              <form id="Serie">
+              <form id="Cadastrando">
+                <input id="Aluno" type="text" placeholder="Nome completo do aluno">
                 <input id="serie" type="text" placeholder="Série">
-              </form>
-
-              <form id="RA">
                 <input id="RA" type="text" placeholder="RA">
-              </form>
-
-              <form id="Data-de-nascimento">
                 <input id="Data-de-nascimento" type="date" placeholder="Data de nascimento">
-              </form>
-
-              <form id="senha">
                 <input id="senha" type="text" placeholder="Senha">
               </form>
+                </div>
+                <a href="pagina-aluno3.html"><button id="cadastrar">Cadastrar</button></a>
 
-                <a href="pagina-aluno3.html"><button type="submit">Cadastrar Aluno</button></a>
-
-            </div>
-            <img src="img/ADDA PRANCHETA1.png" alt="pranchetinha" id="pranchetinha">
+            
+            <img src="img/AddaPNG.png" alt="pranchetinha" id="pranchetinha">
          </div>
+         
     </body>
          <footer></footer>
          <script>

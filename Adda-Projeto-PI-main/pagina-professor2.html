@@ -24,7 +24,7 @@
             top: 0px;
         }
         footer{
-            position: sticky;
+            position: fixed;
             bottom: 0px;
 
         }
@@ -42,12 +42,11 @@
             width: auto;
         }
         #pranchetinha{
-            position: relative;
-            height: 400px;
-            width: auto;
-            top: 60px;
-            right: 310px;
-            left: 0px;
+            position: absolute;
+            width:500px;
+            top: 10px;
+            right: 190px;
+          
         }
     
         .principal {
@@ -61,46 +60,50 @@
         }
         .tabela {
             position: relative;
-            background-color: rgb(219, 219, 219);
+            background-color:white;
             border: 5px solid;
             border-radius: 30px;
             border-color: rgb(0, 5, 53);
             display: flex;
             flex-direction: column;
             height: 350px;
-            width: 400px;
-            left: 0px;
-            right: 200px;
+            width: 370px;
+           left: 300px;
             gap: 33px;
-            padding: 10px;
-            top: 10px;
-
-         
-        }
-        .botoes {
-            height: 50px;
-            width: 400px;
-            border: 3px solid;
-            border-color: rgb(0, 5, 53);
-            border-radius: 20px;
-            font-size: 20px;
-            margin: auto;
-        }
-        .botao-cad {
-            height: 50px;
-            width: auto;
-            border: none;
-            background-color: rgb(0, 5, 53);
-            color: white;
-            font-size: 20px;
-            border-radius: 20px;
+            margin-top: 5px;
         }
 
-        .titulo-cadastro {
-        text-align: center;
-        line-height: 50px;
-        height: 80px;
+       #cadastro{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 300px;
+        margin: 18px;
+        padding: 5px;
+        border: none; 
        }
+
+       #cadastro input {
+        font-size: 18px;
+       }
+
+       #cadastro input:focus{
+        background-color: rgb(209, 209, 209);
+       }
+
+       #cadastrar{
+        position: relative;
+        background-color: aqua;
+        right: 20px;
+        left: 20px;
+        width: 150px;
+        height: 40px;
+        font-size: 18px;
+        margin-top: 270px;
+        border-radius: 15px;
+        border-color: black;
+       }
+    
     </style>
 
     <body>
@@ -113,37 +116,26 @@
         <div class="principal">
                 
             <div class="content">
-                <img src="img/ADDA PRANCHETA1.png" alt="pranchetinha" id="pranchetinha">
+                <img src="img/AddaPNG.png" alt="pranchetinha" id="pranchetinha">
                 <div class="tabela">
 
-                    <form id="CPF">
+                    <form id="cadastro">
                     <input id="CPF" type="text" placeholder="CPF">
-                    </form>
-
-                    <form id="Escola">
                     <input id="Escola" type="Text" placeholder="Escola">
-                    </form>
-                    
-                    <form id="Graduaçao">
                     <input id="Graduaçao" id="Text" placeholder="Graduação">
-                    </form>
-
-                    <form id="Conhecimento">
                     <input id="Conhecimento" id="text" placeholder="Área de Conhecimento">
+                    <form id="Senha"><input id="senha" id="text" placeholder="Senha">
                     </form>
-
-                    <form id="Senha">
-                    <input id="senha" id="text" placeholder="Senha">
-                    </form>
-
-                    <a href="pagina-professor1.html"><button type="submit">Cadastrar</button></a>
-                  
-                    
                 </div>
+                <a href="pagina-professor1.html"><button id="cadastrar">Cadastrar</button></a>
+                 
             </div>
-
         </div>
 
     </body>
         <footer></footer>
+        <script>
+
+
+        </script>
 </html>
