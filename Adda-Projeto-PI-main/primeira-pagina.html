@@ -11,10 +11,12 @@
             font-family: Arial, Helvetica, sans-serif;
             background-color: rgb(237, 231, 217);
             background: linear-gradient(to bottom,
-            #ede7d9 20%,
-            #493521 20%)
+            #ede7d9 19%,
+            #493521 19%)
         }
-
+        #textoAdda{
+            width: 100px;
+        }
         header, footer {
             background-color: rgb(0, 5, 53);
             height: 50px;
@@ -33,7 +35,6 @@
         #adda {
             position: relative;
             width: 100%;
-            top: 10px;
         }
         #sol{
             width: 150px;
@@ -44,13 +45,13 @@
         #flores{
             width: 40%;
             position: absolute;
-            top: 400px;
+            top: 380px;
             z-index: 1;
         }
         #floresDois{
             width: 40%;
             position: absolute;
-            top: 400px;
+            top: 380px;
             right: 10px;
             z-index: 1;
         }
@@ -76,7 +77,7 @@
             padding: 10px 20px;
             font-size: 30px;
             right: 150px;
-            top: 400px;
+            top: 320px;
         }
         #aluno{
             width: 200px;
@@ -88,7 +89,7 @@
             padding: 10px 20px;
             font-size: 30px;
             left: 150px;
-            top: 400px;
+            top: 320px;
         }
         #titulo{
             background-color: rgb(116, 176, 231);
@@ -114,7 +115,7 @@
             border-radius: 50px;
             border: 5px solid rgb(0, 5, 53);
         }
-        #quemsomos, #comoFunciona, #contato{
+        .Titulo{
             width: 80%;
             display: block;
             margin: 0 auto;
@@ -122,6 +123,7 @@
     </style>
 <body>
     <header>
+       <img src="img/addaTexto.png" alt="tipografia da logo do projeto adda" id="textoAdda">
     </header>
 
         <div>
@@ -131,7 +133,7 @@
             <img src="gifs/solzinho.gif" alt="Solzinho sorrindo animado" id="sol">
         </div>
         <div class="pran">
-            <a href="pagina-aluno1.html"><button id="aluno">Aluno</button></a>
+            <a href="pagina-download.html"><button id="aluno">Aluno</button></a>
             <a href="pagina-professor1.html"><button id="professor">Professor</button></a>
         </div>
          <p id="titulo">Aprender pode (e deve) ser divertido.
@@ -139,7 +141,7 @@
             <img src="gifs/nuvensDois.gif" alt="nuvens brancas esquerda" id="nuvens">
             <img src="gifs/nuvensDois.gif" alt="nuvens brancas direita" id="nuvensDois">
         <div class="blocoUm">
-            <img src="img/titulo.png" alt="quem nos somos" id="quemsomos">
+            <img src="img/titulo.png" alt="quem nos somos" class="Titulo">
             <p>O ADDA nasceu para apoiar alunos que, especialmente após a pandemia, enfrentam dificuldades na leitura e na escrita. Unimos educação, tecnologia e diversão para tornar o aprendizado mais acessível, interessante e eficaz.</p>
             <ul>
                 <li>Aprendizagem baseada em jogos</li>
@@ -155,7 +157,7 @@
                 <li>Compromisso com o aprendizado</li>
             </ul>
             <hr>
-            <img src="img/tituloDois.png" alt="titulo de como funciona" id="comoFunciona">
+            <img src="img/tituloDois.png" alt="titulo de como funciona" class="Titulo">
             <p>O projeto é dividido em duas plataformas pensadas para públicos diferentes:</p>
             <h2>App do Aluno</h2>
             <p>Um ambiente lúdico e interativo para aprender brincando.</p>
@@ -173,7 +175,7 @@
                 <li>Acesso organizado e intuitivo</li>
             </ul>
             <hr>
-            <img src="img/tituloQuatro.png" alt="titulo sobre as formas de contato" id="contato">
+            <img src="img/tituloQuatro.png" alt="titulo sobre as formas de contato" class="Titulo">
             <p>Acompanhe o ADDA e fique por dentro das novidades.</p>
             <p>📲 Instagram: @addaeducacaodivertida</p>
             <p>📧 Atendimento online via redes sociais</p>

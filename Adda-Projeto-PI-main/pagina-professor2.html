@@ -5,9 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pagina professor 1</title>
     </head>
-
     <style>
-        
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
@@ -26,7 +24,6 @@
         footer{
             position: fixed;
             bottom: 0px;
-
         }
         .voltar {
             display: flex;
@@ -103,37 +100,31 @@
         border-radius: 15px;
         border-color: black;
        }
+       
     
     </style>
 
     <body>
         <header></header>
-
-        <div class="voltar">
-            <a href="primeira-pagina.html"><button id="botao-voltar"><img src="img/web-button-icon-back-button-free-png.webp" alt="" id="voltar"></button></a>
-        </div>
-        
         <div class="principal">
-                
             <div class="content">
                 <img src="img/AddaPNG.png" alt="pranchetinha" id="pranchetinha">
                 <div class="tabela">
-
                     <form id="cadastro">
-                    <input id="CPF" type="text" placeholder="CPF">
-                    <input id="Escola" type="Text" placeholder="Escola">
-                    <input id="Graduaçao" id="Text" placeholder="Graduação">
-                    <input id="Conhecimento" id="text" placeholder="Área de Conhecimento">
-                    <form id="Senha"><input id="senha" id="text" placeholder="Senha">
+                    <input type="text" placeholder="CPF" maxlength="11">
+                    <input type="Text" placeholder="Escola">
+                    <input type="Text" placeholder="Graduação">
+                    <input type="text" placeholder="Área de Conhecimento">
+                    <form id="Senha">
+                        <input type="password" placeholder="Senha">
                     </form>
                 </div>
                 <a href="pagina-professor1.html"><button id="cadastrar">Cadastrar</button></a>
                  
             </div>
         </div>
-
-    </body>
         <footer></footer>
+    </body>
         <script>
 
 
