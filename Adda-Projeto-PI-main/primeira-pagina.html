@@ -11,8 +11,8 @@
             font-family: Arial, Helvetica, sans-serif;
             background-color: rgb(237, 231, 217);
             background: linear-gradient(to bottom,
-            #ede7d9 19%,
-            #493521 19%)
+            #ede7d9 20%,
+            #493521 20%)
         }
         #textoAdda{
             width: 100px;
@@ -37,7 +37,7 @@
             width: 100%;
         }
         #sol{
-            width: 150px;
+            width: 15%;
             position: absolute;
             right: 50px;
             top: 50px;
@@ -45,26 +45,26 @@
         #flores{
             width: 40%;
             position: absolute;
-            top: 380px;
+            top: 500px;
             z-index: 1;
         }
         #floresDois{
             width: 40%;
             position: absolute;
-            top: 380px;
+            top: 500px;
             right: 10px;
             z-index: 1;
         }
         #nuvens{
             width: 20%;
             position: absolute;
-            top: 900px;
+            top: 1100px;
             left: 205px;
         }
         #nuvensDois{
             width: 15%;
             position: absolute;
-            top: 880px;
+            top: 1110px;
             right: 210px;
         }
         #professor {
@@ -77,7 +77,8 @@
             padding: 10px 20px;
             font-size: 30px;
             right: 150px;
-            top: 320px;
+            top: 500px;
+            z-index: 2;
         }
         #aluno{
             width: 200px;
@@ -89,7 +90,8 @@
             padding: 10px 20px;
             font-size: 30px;
             left: 150px;
-            top: 320px;
+            top: 500px;
+            z-index: 2;
         }
         #titulo{
             background-color: rgb(116, 176, 231);
@@ -119,6 +121,125 @@
             width: 80%;
             display: block;
             margin: 0 auto;
+        }
+        @media only screen and (min-width:325px){
+            body{
+                background: linear-gradient(to bottom,
+            #ede7d9 6%,
+            #493521 6%)
+            }
+        #flores{
+            top: 150px;
+        }
+        #floresDois{
+            top: 150px;
+        }
+        #titulo{
+            margin: 2px 10px;
+            padding: 20px;
+            border: 2px solid white;
+            font-size: 10px;
+        }
+        #nuvens{
+            top: 280px;
+            left: 15px;
+        }
+        #nuvensDois{
+            top: 290px;
+            right: 15px;
+        }
+        }
+
+
+        @media only screen and (min-width:768px){
+            body{
+                background: linear-gradient(to bottom,
+            #ede7d9 15%,
+            #493521 15%)
+            }
+        #flores{
+            top: 250px;
+        }
+        #floresDois{
+            top: 250px;
+        }
+        #titulo{
+            margin: 10px 10px;
+            padding: 20px;
+            border: 2px solid white;
+            font-size: 15px;
+        }
+        #nuvens{
+            top: 430px;
+            left: 15px;
+        }
+        #nuvensDois{
+            top: 430px;
+            right: 15px;
+        }
+        }
+
+
+        @media only screen and (min-width:1024px){
+            body{
+                background: linear-gradient(to bottom,
+            #ede7d9 17%,
+            #493521 17%)
+            }
+        #flores{
+            top: 300px;
+        }
+        #floresDois{
+            top: 300px;
+        }
+        #titulo{
+            margin: 30px 20px;
+            padding: 30px;
+            border: 2px solid white;
+            font-size: 20px;
+        }
+        #nuvens{
+            top: 580px;
+            left: 25px;
+        }
+        #nuvensDois{
+            top: 560px;
+            right: 25px;
+        }
+        }
+
+
+         @media only screen and (min-width:1440px){
+            body{
+                background: linear-gradient(to bottom,
+            #ede7d9 20%,
+            #493521 20%)
+            }
+        #flores{
+            top: 400px;
+        }
+        #floresDois{
+            top: 400px;
+        }
+        #titulo{
+            margin: 30px 50px;
+            padding: 30px;
+            border: 2px solid white;
+            font-size: 20px;
+        }
+        #nuvens{
+            top: 740px;
+            left: 90px;
+        }
+        #nuvensDois{
+            top: 750px;
+            right: 100px;
+        }
+        }
+
+
+        @media only screen and (min-width:2560px){
+
         }
     </style>
 <body>
