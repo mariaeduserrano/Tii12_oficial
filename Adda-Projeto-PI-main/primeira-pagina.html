@@ -69,31 +69,37 @@
         }
         #professor {
             width: 200px;
+            height: 100px;
             position: absolute;
             background-color: rgb(113, 59, 129);
             color: white;
-            border: none;
+            border: none; 
             border-radius: 50px;
-            padding: 10px 20px;
             font-size: 30px;
             right: 150px;
             top: 500px;
             z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         #aluno{
             width: 200px;
+            height: 100px;
             position: absolute;
             background-color: rgb(116, 176, 231);
             color: white;
             border: none; 
             border-radius: 50px;
-            padding: 10px 20px;
             font-size: 30px;
             left: 150px;
             top: 500px;
             z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        #titulo{
+        .titulo{
             background-color: rgb(116, 176, 231);
             padding: 50px;
             text-align: center;
@@ -117,16 +123,47 @@
             border-radius: 50px;
             border: 5px solid rgb(0, 5, 53);
         }
-        .Titulo{
+        .TituloG{
             width: 80%;
             display: block;
             margin: 0 auto;
         }
+
+        input{
+            font-size: 20px;
+            width: 250px;          
+            padding: 10px;        
+            border-radius: 20px;  
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+ 
+        label{
+            font-size: 20px;
+        }
+ 
+        select{
+             font-size: 20px;
+            width: 250px;          
+            padding: 10px;        
+            border-radius: 20px;  
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+ 
+        textarea{
+             font-size: 20px;
+            width: 250px;          
+            padding: 10px;        
+            border-radius: 20px;  
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
         @media only screen and (min-width:325px){
             body{
                 background: linear-gradient(to bottom,
-            #ede7d9 6%,
-            #493521 6%)
+            #ede7d9 10%,
+            #493521 10%)
             }
         #flores{
             top: 150px;
@@ -134,7 +171,7 @@
         #floresDois{
             top: 150px;
         }
-        #titulo{
+        .titulo{
             margin: 2px 10px;
             padding: 20px;
             border: 2px solid white;
@@ -148,14 +185,44 @@
             top: 290px;
             right: 15px;
         }
+        .blocoUm{
+            margin: 20px;
+            background-color: #ede7d9;
+            padding: 20px;
+            border-radius: 50px;
+            border: 5px solid rgb(0, 5, 53);
+            font-size: small;
+        }
+        #professor {
+            width: 80px;
+            height: 30px;
+            position: absolute;
+            font-size: 14px;
+            right: 20px;
+            top: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #aluno{
+            width: 80px;
+            height: 30px;
+            position: absolute;
+            font-size: 14px;
+            left: 20px;
+            top: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         }
 
 
         @media only screen and (min-width:768px){
             body{
                 background: linear-gradient(to bottom,
-            #ede7d9 15%,
-            #493521 15%)
+            #ede7d9 13%,
+            #493521 13%)
             }
         #flores{
             top: 250px;
@@ -163,7 +230,7 @@
         #floresDois{
             top: 250px;
         }
-        #titulo{
+        .titulo{
             margin: 10px 10px;
             padding: 20px;
             border: 2px solid white;
@@ -177,14 +244,42 @@
             top: 430px;
             right: 15px;
         }
+        .blocoUm{
+            margin: 40px;
+            padding: 20px;
+            border-radius: 50px;
+            font-size:medium;
+        }
+        #professor {
+            width: 120px;
+            height: 50px;
+            position: absolute;
+            font-size: 20px;
+            right: 100px;
+            top: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #aluno{
+            width: 120px;
+            height: 50px;
+            position: absolute;
+            font-size: 20px;
+            left: 100px;
+            top: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         }
 
 
         @media only screen and (min-width:1024px){
             body{
                 background: linear-gradient(to bottom,
-            #ede7d9 17%,
-            #493521 17%)
+            #ede7d9 13%,
+            #493521 13%)
             }
         #flores{
             top: 300px;
@@ -192,11 +287,12 @@
         #floresDois{
             top: 300px;
         }
-        #titulo{
+        .titulo{
             margin: 30px 20px;
             padding: 30px;
             border: 2px solid white;
             font-size: 20px;
+            border-radius: 100px;
         }
         #nuvens{
             top: 580px;
@@ -206,14 +302,42 @@
             top: 560px;
             right: 25px;
         }
+        .blocoUm{
+            margin: 60px;
+            padding: 25px;
+            border-radius: 80px;
+            font-size: large;
+        }
+        #professor {
+            width: 120px;
+            height: 50px;
+            position: absolute;
+            font-size: 20px;
+            right: 100px;
+            top: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #aluno{
+            width: 120px;
+            height: 50px;
+            position: absolute;
+            font-size: 20px;
+            left: 100px;
+            top: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         }
 
 
          @media only screen and (min-width:1440px){
             body{
                 background: linear-gradient(to bottom,
-            #ede7d9 20%,
-            #493521 20%)
+            #ede7d9 15%,
+            #493521 15%)
             }
         #flores{
             top: 400px;
@@ -221,7 +345,7 @@
         #floresDois{
             top: 400px;
         }
-        #titulo{
+        .titulo{
             margin: 30px 50px;
             padding: 30px;
             border: 2px solid white;
@@ -235,11 +359,122 @@
             top: 750px;
             right: 100px;
         }
+        .blocoUm{
+            margin: 80px;
+            padding: 50px;
+            border-radius: 100px;
+            font-size: larger;
+        }
+        #professor {
+            width: 200px;
+            height: 70px;
+            position: absolute;
+            font-size: 25px;
+            right: 100px;
+            top: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #aluno{
+            width: 200px;
+            height: 70px;
+            position: absolute;
+            font-size: 25px;
+            left: 100px;
+            top: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        }
+
+
+
+        @media only screen and (min-width:1920px){
+            body{
+                background: linear-gradient(to bottom,
+            #ede7d9 17%,
+            #493521 17%)
+            }
+             #flores{
+            top: 550px;
+        }
+        #floresDois{
+            top: 550px;
+        }
+        .titulo{
+            margin: 50px 90px;
+            padding: 50px;
+            border: 2px solid white;
+            font-size: 22px;
+        }
+        #nuvens{
+            top: 970px;
+            left: 150px;
+        }
+        #nuvensDois{
+            top: 1000px;
+            right: 150px;
+        }
         }
 
 
         @media only screen and (min-width:2560px){
-
+            body{
+                background: linear-gradient(to bottom,
+            #ede7d9 17%,
+            #493521 17%)
+            }
+            #flores{
+            top: 700px;
+        }
+        #floresDois{
+            top: 700px;
+        }
+        .titulo{
+            margin: 50px 250px;
+            padding: 50px;
+            border: 2px solid white;
+            font-size: 35px;
+            border-radius: 150px;
+        }
+        #nuvens{
+            top: 1250px;
+            left: 250px;
+        }
+        #nuvensDois{
+            top: 1300px;
+            right: 300px;
+        }
+        .blocoUm{
+            margin:100px;
+            padding: 70px;
+            border-radius: 150px;
+            font-size: xx-large;
+        }
+        #professor {
+            width: 300px;
+            height: 100px;
+            position: absolute;
+            font-size: 50px;
+            right: 250px;
+            top: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #aluno{
+            width: 300px;
+            height: 100px;
+            position: absolute;
+            font-size: 50px;
+            left: 250px;
+            top: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         }
     </style>
 <body>
@@ -257,12 +492,12 @@
             <a href="pagina-download.html"><button id="aluno">Aluno</button></a>
             <a href="pagina-professor1.html"><button id="professor">Professor</button></a>
         </div>
-         <p id="titulo">Aprender pode (e deve) ser divertido.
+         <p class="titulo">Aprender pode (e deve) ser divertido.
             O ADDA é um projeto educacional <br>que apoia a alfabetização de alunos do 6º ano por meio de jogos, <br>aulas interativas e acompanhamento pedagógico.</p>
             <img src="gifs/nuvensDois.gif" alt="nuvens brancas esquerda" id="nuvens">
             <img src="gifs/nuvensDois.gif" alt="nuvens brancas direita" id="nuvensDois">
         <div class="blocoUm">
-            <img src="img/titulo.png" alt="quem nos somos" class="Titulo">
+            <img src="img/titulo.png" alt="quem nos somos" class="TituloG">
             <p>O ADDA nasceu para apoiar alunos que, especialmente após a pandemia, enfrentam dificuldades na leitura e na escrita. Unimos educação, tecnologia e diversão para tornar o aprendizado mais acessível, interessante e eficaz.</p>
             <ul>
                 <li>Aprendizagem baseada em jogos</li>
@@ -278,7 +513,7 @@
                 <li>Compromisso com o aprendizado</li>
             </ul>
             <hr>
-            <img src="img/tituloDois.png" alt="titulo de como funciona" class="Titulo">
+            <img src="img/tituloDois.png" alt="titulo de como funciona" class="TituloG">
             <p>O projeto é dividido em duas plataformas pensadas para públicos diferentes:</p>
             <h2>App do Aluno</h2>
             <p>Um ambiente lúdico e interativo para aprender brincando.</p>
@@ -296,11 +531,58 @@
                 <li>Acesso organizado e intuitivo</li>
             </ul>
             <hr>
-            <img src="img/tituloQuatro.png" alt="titulo sobre as formas de contato" class="Titulo">
+            <img src="img/tituloQuatro.png" alt="titulo sobre as formas de contato" class="TituloG">
             <p>Acompanhe o ADDA e fique por dentro das novidades.</p>
             <p>📲 Instagram: @addaeducacaodivertida</p>
             <p>📧 Atendimento online via redes sociais</p>
             <p>Formulário para contato:</p>
+            <hr>
+            <div>
+                <form action="" method="post" name="">
+                <p>
+                    <label for="Nome">Nome:</label>
+                </p>
+                <P>
+                    <input type="text" id="nome" name="Nome" placeholder="Nome completo">
+                </p>
+            
+                <p>
+                    <label for="email">E-mail:</label>
+                </p>
+                <p>
+                    <input type="text" id="email" name="Email" placeholder="E-mail" required>
+                </p>
+                <p>
+                    <label for="Telefone">Telefone/whatsApp:</label>
+                </p>
+                <p>
+                    <input type="text" id="Telefone" name="telefone" placeholder="(00) 00 000000000" required>
+                </p>
+                <p>
+                    <label for="idade">Qual é a sua idade?</label>
+                </p>
+                <p>
+                    <input type="number" id="idade" name="Idade" placeholder="00">
+                </p>
+                <p>
+                    <label for="Assunto">Assunto:</label>
+                </p>
+                <p>
+                    <select name="assunto" id="assunto">
+                        <option value="Duvida">Duvidas</option>
+                        <option value="Elogios">Elogios</option>
+                        <option value="Reclamação">Reclamações</option>
+                        <option value="Outros">Outros</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="mensagem">Mensagem:</label>
+                </p>
+                <p>
+                    <textarea name="mensagem" id="mensagem" cols="60" rows="10" placeholder="Digite sua mensagm aqui:"></textarea>
+                </p>
+                </form>
+            </div>
         </div>
     <footer></footer>
 </body>
